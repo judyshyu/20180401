@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+	<link rel='profile' href='http://gmpg.org/xfn/11'><!--固定-->
+	<link rel='shortcut icon' href='img/favicon.png' /><!--固定-->
+	<link rel='canonical' href='' />
+	<link rel='shortlink' href='' />
+	<title>悠悠天不老</title>
+
+	<link rel="stylesheet" href="lib/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<svg xmlns="https://www.w3.org/2000/svg" version="1.1" style="display: none;">
+		<defs>
+			<filter id="blur">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="5,5"></feGaussianBlur>
+			</filter>
+		</defs>
+	</svg>
+	<div id="container">
+		<section id="secStart" class="active">
+			<div class="w800">
+				<div class="scrollBox no-scroll">
+					<div class="gifBox">
+						<img src="img/start.gif" alt="" style="width:100%;">
+					</div>
+				</div>
+				<div class="btnBox">
+					<a class="btn fleft fright next" id="startButton">開始</a>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="w800 ringtone">
+				<ul class="ringtonecontent">
+					<li>叮</li>
+					<li>鈴</li>
+					<li>鈴</li>
+					<li>鈴</li>
+				</ul>
+				<div class="scrollBox">
+					<h3>
+						時間：2018年4月1日<br>
+						地點：大江山市首塚酒店<br>
+					</h3>
+					<p>
+						<br>
+						酒吞被電話聲吵到醒過來，頭痛欲裂，先喝水還是先接電話？
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section data-tag="select">
+			<div class="w800">
+				<div class="scrollBox">
+					<ul class="selectBox">
+						<li><a data-target="#sec01">喝</a></li>
+						<li><a data-target="#sec02">不喝，先抓抓癢</a></li>
+						<li><a data-target="#endB">接電話</a></li>
+						<li><a data-target="#endE">倒頭繼續睡</a></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright hidden">不要偷看喇</a></div>
+			</div>
+		</section>
+		<section id="sec01">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						喝了水覺得頭痛減輕了許多，因而發現，頭不是最痛的，菊花才是。<br>
+						<br>
+						突然回想起昨天發生的事......</p>
+				</div>
+				<div class="btnBox cf">
+					<a class="btn fright goTo" data-target="#secC01">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="sec02">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>抓完癢正要接電話時卻已經停了，被吵醒很不開心，頂著頭痛去洗澡，洗澡的過程發現屁股裡有東西慢慢流出，回想起昨晚發生的事......</p>
+				</div>
+				<div class="btnBox cf">
+					<a class="btn fright goTo" data-target="#secC01-1">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="secC01">
+			<div class="w800 comic">
+				<img src="img/C01-01.jpg" alt="">
+				<img src="img/C01-02.jpg" alt="">
+				<img src="img/C01-03.jpg" alt="">
+				<div class="btnBox cf">
+					<a class="btn fright goTo" style="margin: 30px 0 50px;" data-target="#sec01-1">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="secC01-1">
+			<div class="w800 comic">
+				<img src="img/C01-01.jpg" alt="">
+				<img src="img/C01-02.jpg" alt="">
+				<img src="img/C01-03.jpg" alt="">
+				<div class="btnBox cf">
+					<a class="btn fright goTo" style="margin: 30px 0 50px;" data-target="#sec02-1">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="sec01-1">
+			<div class="w800">
+				<div class="scrollBox">
+					<p class="angry">氣死人！！！</p>
+					<p>感到屁股有東西流出，更氣了。</p>
+				</div>
+				<div class="btnBox cf">
+					<a class="btn fright goTo" data-target="#sec01-2">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="sec01-2" data-tag="select">
+			<div class="w800">
+				<div class="scrollBox">
+					<ul class="selectBox">
+						<li><a data-target="#secE01">衝去浴室梳洗。</a></li>
+						<li><a data-target="#endC">不去浴室，直接打電話找認識的律師。</a></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright hidden">不要偷看喇</a></div>
+			</div>
+		</section>
+		<section id="sec02-1">
+			<div class="w800">
+				<div class="scrollBox">
+					<h3 class="angry">氣死人！</h3>
+				</div>
+				<div class="btnBox cf">
+					<a class="btn fright goTo" data-target="#secE01">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="secE01">
+			<div class="w800 cococo">
+				<ul class="cococontent">
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+				</ul>
+				<div class="scrollBox">
+					<p>梳洗一番後，邊吹頭髮邊看電視正在播報新聞，準備退房，依然很氣，拿出手機...</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="secE01-1">
+			<div class="w800 comic">
+				<img src="img/C02-02.jpg" alt="">
+				<img src="img/C02-03.jpg" alt="">
+				<div class="btnBox cf"><a class="btn fright next" style="margin: 30px 0 50px;">下一步</a></div>
+			</div>
+		</section>
+		<section id="secE01-2">
+			<div class="w800 cococo">
+				<ul class="cococontent">
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+					<li>ゴ</li>
+				</ul>
+				<div class="scrollBox">
+					<p>
+						『接下來為您突擊花樣警官的更衣間......』<br>
+						<br>
+						酒吞氣得想殺人了，已經沒有興致繼續看下去。
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section data-tag="select">
+			<div class="w800">
+				<div class="scrollBox">
+					<ul class="selectBox">
+						<li><a data-target="#sec03">砸電視</a></li>
+						<li><a data-target="#sec04">不砸電視</a></li>
+						<li><a data-target="#endA" onclick="startTv();">酒吞不想看電視，可是我想看......</a></li>
+						<li><a href="judyshyu.github.io/20170401" target="_blank">我也想租女友</a></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright hidden">不要偷看喇</a></div>
+			</div>
+		</section>
+		<section id="sec03">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>砸電視之後，酒吞就被酒店的警衛送去警局，然後他見到了...</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#sec07">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec04" data-tag="select">
+			<div class="w800">
+				<div class="scrollBox">
+					<ul class="selectBox">
+						<li><a data-target="#sec05">用自己的手機報警</a></li>
+						<li><a data-target="#sec06">用酒店的座機報警</a></li>
+						<li><a data-target="#sec08">人生還是先吃頓早餐壓壓驚</a></li>
+						<li><a data-target="#sec09">直接上門去談判</a></li>
+						<li><a data-target="#endH">用手機搜尋手槍或刀之類的該去哪裡買</a></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright hidden">不要偷看喇</a></div>
+			</div>
+		</section>
+		<section id="sec05">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						拿起手機開始撥打，耳邊響起電話接通的聲音。<br>
+						<br>
+						「您好，這裡是警察局，請問有什麼能為您效勞的？」<br>
+						<br>
+						「我要報案，有人強姦我。」<br>
+						<br>
+						「請問先生您現在在哪裡？需要幫您叫救護車嗎？」<br>
+						<br>
+						「大江山市首塚酒店」<br>
+						<br>
+						「...........................請問是不是370號房？」<br>
+						<br>
+						「是的...等等！你怎麼知道！？」<br>
+						<br>
+						「聽到你精神這麼好，真是太好了，我原本還很擔心昨晚這麼操...勞你，你的身體如此強壯、健康、勇猛、回復力如此快速，又能兼具柔軟度以及韌性，那精實的肌肉，以及令人欲罷不能、一直吸著我的......」<br>
+						<br>
+						<br>
+						<br>
+						嘟......嘟......嘟......
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#sec05-1">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec05-1">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						酒吞氣得砸了自己的手機，他決定去隔壁楓葉市的警局報案，準備退房。<br>
+						<br>
+						突然發現......<br>
+						<br>
+						手機沒了，沒辦法使用行動支付，錢包裡沒放這麼多錢，他跟酒店的經理解釋，經理看了看他身上的刺青，以及那隨性的打扮，遲疑了一下，點了點頭。酒吞鬆了一口氣，結果下一秒他馬上被兩名警衛架起往外面拖。<br>
+						<br>
+						經理在後面喊著：<br>
+						<br>
+						「我也想借你電話，但我怕借你之後你喊了你的兄弟們，我們這間小小的酒店不想引起太多騷動，驚擾了我們的貴客，若是有誤會，請您直接跟警局借電話吧。」<br>
+						<br>
+						警局！不要警局！<br>
+						<br>
+						酒吞快要氣死了。<br>
+						<br>
+						很快地他見到了...
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#sec07">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec06">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						拿起座機開始撥打，耳邊響起電話接通的聲音。<br>
+						<br>
+						「您好，這裡是警察局，請問有什麼能為您效勞的？」<br>
+						<br>
+						「我要報案，有人強姦我。」<br>
+						<br>
+						「請問先生您現在在哪裡？需要幫您叫救護車嗎？」<br>
+						<br>
+						「大江山市首塚酒店」<br>
+						<br>
+						「...........................請問是不是370號房？」<br>
+						<br>
+						「是的...等等！你怎麼知道！？」<br>
+						<br>
+						「聽到你精神這麼好，真是太好了，我原本還很擔心昨晚這麼操...勞你，你的身體如此強壯、健康、勇猛、回復力如此快速，又能兼具柔軟度以及韌性，那精實的肌肉，以及令人欲罷不能、一直吸著我的......」<br>
+						<br>
+						<br>
+						<br>
+						嘟......嘟......嘟......
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#sec06-1">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec06-1">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>酒吞氣得砸了電話，被酒店的警衛送去警局，然後他見到了......</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#sec07">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec07">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						獨自留守的茨木童子，兩人一見面，立刻乾柴烈火...呸呸呸呸呸...<br>
+						<br>
+						酒吞立刻襲警，好險酒店的警衛們還在，立刻制止這場單方面的鬥毆，但被打的那個人好像覺得很遺憾，在警衛的堅持下幫酒吞上了手銬。<br>
+						<br>
+						警衛離去後，茨木帶著酒吞去到了...
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#secE02">下一步</a></div>
+			</div>
+		</section>
+		<section id="secE02" data-tag="select">
+			<div class="w800">
+				<div class="scrollBox">
+					<ul class="selectBox">
+						<li><a data-target="#secE02-1">警員休息室</a></li>
+						<li><a data-target="#secE02-2">警察局局長室</a></li>
+						<li><a data-target="#secE02-3">廁所</a></li>
+						<li><a data-target="#secE02-4">拘留室</a></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright hidden">不要偷看喇</a></div>
+			</div>
+		</section>
+		<section id="secE02-1">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						手被反剪在身後的酒吞，被茨木強硬地拉著坐在他腿上，圈在懷中，酒吞跟茨木咬牙切齒地談了一些事，聽不太清楚，太小聲了......<br>
+						<br>
+						很快地.........<br>
+						<br>
+						有些什麼奇怪的聲音從休息室傳出......<br>
+						<br>
+					</p>
+					<img src="img/arrest.jpg" alt="" style="width: 100%;margin-top: 10px;">
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#endYay">下一步</a></div>
+			</div>
+		</section>
+		<section id="secE02-2">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						「現在警察都把犯人關在自家長官的辦公室？」酒吞挑眉詢問。<br>
+						<br>
+						「你不是什麼犯人，是受害者。」茨木幫酒吞解了手銬<br>
+						<br>
+						「你也知道啊！！」手銬解開後，酒吞捏了捏手腕。<br>
+						<br>
+						「我給你這個機會，直接跟我們長官談，他人現在外出吃飯不在，大概一個小時後會回來。」<br>
+						<br>
+						「......昨天晚上你的態度可不是這樣好說話的。」<br>
+						<br>
+						「那是情不自禁，其實我們不是第一次見面，我見過你很多次了。」<br>
+						<br>
+						「！！」酒吞他很震驚
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#secE02-2-1">下一步</a></div>
+			</div>
+		</section>
+		<section id="secE02-2-1" data-tag="select">
+			<div class="w800">
+				<div class="scrollBox">
+					<ul class="selectBox">
+						<li><a data-target="#endF">用手在耳邊比了一個六</a></li>
+						<li><a data-target="#endG">用手摸了摸今天一整天都在痛的額角</a></li>
+						<li><a data-target="#endI">他突然很想聽聽茨木要說什麼</a></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright hidden">不要偷看喇</a></div>
+			</div>
+		</section>
+		<section id="secE02-3">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						「你先上個廁所吧，我們局長去吃飯，要一個小時後才會回來。」茨木貼心地說<br>
+						<br>
+						「？？？不是應該先審訊。」酒吞非常疑惑<br>
+						<br>
+						「我覺得你應該不想要我幫你做筆錄。」<br>
+						<br>
+						「你知道就好，那先幫我解開手銬。」<br>
+						<br>
+						「嗯......不太妥。」<br>
+						<br>
+						「你覺得我會逃跑嗎！我本來就不是犯人！你才是啊！」<br>
+						<br>
+						「請你不要這麼大聲說話，也不要用腳踢我。」<br>
+						<br>
+						「不然你想怎麼樣！」<br>
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="secE02-3-1">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						「不然我覺得我好像有點興奮......」<br>
+						<br>
+						酒吞覺得整個人都不好了，他原本步步逼迫對方，以手被反剪在後面的姿勢，他現在只想離對方越遠越好。<br>
+						<br>
+						「我不想上廁所了，讓我去拘留室。」<br>
+						<br>
+						「可是我想上，先等我一下，不要跑喔。」<br>
+						<br>
+						酒吞聽到對方拉拉鍊的聲音，趁這個機會立刻往門口衝，下一秒馬上被拉回來頂在門上。<br>
+						<br>
+						「我就猜到...你不是會乖乖聽話的人。」<br>
+						<br>
+						「嘖。」<br>
+						<br>
+						「現在怎麼辦？我很想上廁所，你又想跑，不然你陪我一起上吧。」<br>
+						<br>
+						「！！」<br>
+						<br>
+						兩人拉拉扯扯著。<br>
+						<br>
+						「你是不能把我一隻手銬在欄杆上嗎！！你是警察還是我是警察！」<br>
+						<br>
+						「手銬鑰匙在我外套的口袋裡，我沒帶呢。」<br>
+						<br>
+						「去拿啊！！把我銬在拘留室裡！」<br>
+						<br>
+						「不，我尿很急，現在必須馬上解放。」<br>
+						<br>
+						「幾歲的人了！憋著！！」<br>
+						<br>
+						「憋不住啊......你看。」<br>
+						<br>
+						酒吞低頭一看，即使隔著內褲，龐然大物從還未拉上的石門水庫露出一部分，酒吞快氣暈過去了。<br>
+						<br>
+						「操！你這根本不是尿急！」<br>
+						<br>
+						「不知不覺你讓我很興奮。」<br>
+						<br>
+						「我不是，我沒有！」<br>
+						<br>
+						「幫幫我好嗎？讓我上個廁所。」<br>
+						<br>
+						「我聽出來了！原來你從頭到尾根本就是故意的！因為廁所沒有監視器！老子不當廁所！」<br>
+						<br>
+						「就一下，我就蹭蹭不進去......」<br>
+						<br>
+						「昨天你也是這樣說的！！結果進去了一整晚都不肯出來！！」<br>
+						<br>
+						「天...我鼻血快流下來了，拜託你別挑逗我。」<br>
+						<br>
+						「我沒有！！不！你做什麼拉著我往隔間走！小便斗在那裡！！」<br>
+						<br>
+						「什麼？原來你比較喜歡在那裡上，也行。」<br>
+						<br>
+						「不！！你的上跟我的上肯定不是同一個意思！」<br>
+						<br>
+						「你的腦袋如此聰慧，你的背肌如此性感...」<br>
+						<br>
+						「拜託！別脫我上衣！警察！！！！」<br>
+						<br>
+						「我在。」<br>
+						<br>
+						酒吞瀕臨崩潰......<br>
+						<br>
+						不久......<br>
+						<br>
+						傳出茨木正在上廁所的聲音，雖然這個廁所跟別的廁所不大一樣。
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#endYay">下一步</a></div>
+			</div>
+		</section>
+		<section id="secE02-4">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						「犯人不是要去拘留室？」酒吞問道<br>
+						<br>
+						「那邊有其他犯人在，不大方便。」茨木一本正經地回答<br>
+						<br>
+						「你是想方便什麼，我有一種不大好的預感，讓我去拘留室！我要跟其他犯人關在一起！」<br>
+						<br>
+						「不行，你身份不一樣，我帶你去別的地方。」
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#secE02">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec08">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>早餐看起來怪怪的，到底該不該吃？</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec08-1" data-tag="select">
+			<div class="w800">
+				<div class="scrollBox">
+					<ul class="selectBox">
+						<li><a data-target="#endD">吃</a></li>
+						<li><a data-target="#sec08-2">不吃</a></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright hidden">不要偷看喇</a></div>
+			</div>
+		</section>
+		<section id="sec08-2">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>跟店家吵架，結果被送去警局......</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright goTo" data-target="#sec07">下一步</a></div>
+			</div>
+		</section>
+		<section id="sec09">
+			<div class="w800 comic">
+				<img src="img/C02-04.jpg" alt="">
+				<div class="btnBox cf">
+					<a class="btn fright goTo" style="margin: 30px 0 50px;" data-target="#endYay">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="endA">
+			<div class="w800">
+				<a href="https://www.facebook.com/NPA4U/photos/a.827869690584027.1073741828.818773044827025/1599662863404702/?type=3&theater" target="_blank" id="fakeA" class="w800">
+					<img src="img/favicon.png" alt="" class="ib-middle" style="margin-right: 10px;"><p class="ib-middle">【警政服務】</p>
+					<p>為了緝捕嫌犯，我的Cosplay沒有極限。</p>
+				</a>
+				<div class="scrollBox no-scroll" id="tv">
+					<div class="tvprev" onclick="playPrev();" title="我要轉台！"></div>
+					<div id="playerBox">
+						<div id="player"></div>
+					</div>
+					<div class="tvnext" onclick="playNext();" title="我要轉台！"></div>
+					<small class="txt-center" style="margin-top: 5px; position: relative;z-index: 2;">大陸地區不支援電視格式請翻牆</small>
+				</div>
+				<div class="btnBox cf"><a id="goTv" class="btn fright next" onclick="endTv();">下一步</a></div>
+			</div>
+		</section>
+		<section id="endA-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 電視兒童</h2>
+				<div class="btnBox"><a class="btn fright fleft restart" onclick="endTv();">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endB">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>手機螢幕顯示紅葉來電，立刻接起來，紅葉表示有點事需要酒吞幫忙，義不容辭，無視身上的不舒適，忘記好像有什麼重要的事情，立刻動身前往當工具人。</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endB-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 工具人</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endC">
+			<div class="w800">
+				<div class="scrollBox">
+					<h3>遭遇性侵害後，怎麼辦？</h3>
+					<br>
+					<p>性侵害可能造成被害人淤青、擦傷、挫傷或刀傷等，也可能導致懷孕或感染性病。此外，被害人還需面對心理的創傷。如果強暴案不幸發生了，建議你：</p>
+					<br>
+					<ul>
+						<li><p>一、<b>請相信你並沒有犯錯。</b></p><br></li>
+						<li><p>二、<b>找個安全的地方待著。</b></p><br></li>
+						<li><p>三、<b>找個信任的人陪伴你。</b>不管當時多晚，都不要自己一個人。找親人、朋友或老師陪伴，或找社福機構、學校等相關單位求助，或撥「婦幼保護專線113」與性侵害防治中心聯繫。</p><br></li>
+						<li><p>四、<b>不要洗澡，也別換衣服，盡快就醫。</b>萬一不幸遭遇性侵害，就應立刻尋找合格醫師檢查，以進行必要的蒐證、治療或避孕措施。為了保存相關證據，請你先忍耐，不要洗澡更衣，許多醫院都有全天24小時的急診，可以立刻就醫。</p><br></li>
+						<li><p>五、<b>如果是陌生強暴，請牢記歹徒各項特徵。</b>並且保留現場不要移動或觸摸任何現場器物。</p><br></li>
+						<li><p>六、<b>儘快向警方或相關單位報案。</b>很多人往往會擔心二度傷害而躊躇不前，甚至不去報案。然而，報案不但可以減少其他婦女受害的機會，也是保障自己免於被加害人再度傷害的方法。長久以來，警檢單位及法院審理性侵害案件的輕忽態度一直受到強烈的批評，但在「性侵害犯罪防治法」等相關法律及施行細則、處理準則頒佈後，受害人可以要求相關單位照章辦理，以降低二度傷害的機會。<br>
+						<br>
+						驗傷以及體液蒐證，保存一切相關證據，數日後立刻將茨木移送法辦。</p></li>
+					</ul>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endC-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 好好學習，天天向上</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endD">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>吃下去之後，直接食物中毒，被送去醫院休養三日。</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endD-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 可怕的孟婆湯</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endE">
+			<div class="w800">
+				<div class="scrollBox">
+					<h3 class="zzz">ZZZ</h3>
+					<p class="zzz" style="animation-delay: .5s;">ZZZ</p>
+					<small class="zzz" style="animation-delay: .8s;">ZZZ</small>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endE-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 你到底想不想玩這個遊戲？</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endF">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						「喂，警察局嗎？我身邊有個跟蹤狂？我想報警。」<br>
+						<br>
+						茨木也用手比了個六在耳邊<br>
+						<br>
+						「喂，他不只是跟蹤狂，還是強姦犯，可是...昨天晚上你明明也很享受的...該說是和姦。」<br>
+						<br>
+						酒吞今天已經不知道氣了多少次，這次讓他生氣的本人就在眼前，立刻又襲警了，打著打著，肢體接觸漸漸地有點變樣了，上衣不知不覺被脫掉，光裸著上身的酒吞壓制住茨木，騎在他身上，忽視臀下奇怪的硬物，靠近他耳邊說<br>
+						<br>
+						「這種情況下還能興奮，茨木警官，你真的是變態嗎？」<br>
+						<br>
+						「茨木警官還能更興奮，你不是知道的？」<br>
+						<br>
+						茨木一個挺身，他們倆又打了起來，打了良久，這次茨木成功壓制住了酒吞，酒吞被壓在局長的桌上，手被反剪在身後，兩人之間毫無縫隙，喘息聲讓氣氛有一點曖昧跟尷尬。<br>
+						<br>
+						酒吞感覺到茨木親了親自己的耳朵，悶悶地說<br>
+						<br>
+						「我是認真的。」<br>
+						<br>
+						「警察局長如果知道茨木警官在他辦公桌上調情，他會怎麼想？」酒吞說
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endF-1">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+						門口傳來黑晴明局長冷冷地聲音<br>
+						<br>
+						「他會記茨木警官一支大過。」
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endF-2" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 停職懲處</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endG">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>超出忍耐極限了，酒吞終於被氣暈了過去，茨木送他去醫院，住院一天。</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endG-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 累積太多狂氣</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endH">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>不小心點到網頁的廣告頁面，跳到了奇怪又詭異的網站，結果酒吞就不小心看了起來......</p>
+					<br>
+					<a href="http://oopeach.lofter.com/post/1cb3cc53_119c6b51" target="_blank" class="txt-link">點這裡看看酒吞看到了什麼。</a>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endH-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 置入性行銷</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endI">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>
+					茨木他一臉正經地說：<br>
+					<br>
+					「其實我是你前世的戀人。」<br>
+					<br>
+					酒吞收回他震驚的表情，跟茨木借了他的手機。<br>
+					<br>
+					「喂，您好，需要救護車，有一個精神病患在這裡。」
+					</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endI-1" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 精神病患</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endYay">
+			<div class="w800">
+				<div class="scrollBox">
+					<p>最後，他們就醬醬釀釀下略五千字。</p>
+				</div>
+				<div class="btnBox cf">
+					<a class="btn fleft goTo" data-target="#endBook">前往預定本子</a>
+					<a class="btn fright next">下一步</a>
+				</div>
+			</div>
+		</section>
+		<section id="endYay-1" class="bedEnd">
+			<div class="w800">
+				<h2>BED END - 床結局 <span><img src="img/heart.png" alt="<3" class="pulse"></span></h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+		<section id="endBook">
+			<div class="w800 comic">
+				<img src="img/C02-01.jpg" alt="cover">
+				<p>
+					<br>
+					<br>
+					【刊物】 親親和邊操②<br>
+					【內容】 陰陽師手遊 茨酒 R18<br>
+					【規格】 B5 24P 黑白漫畫<br>
+					【場售】 NT$150<br>
+					【首販】 2018-04-01<br>
+				</p>
+				<div class="btnBox cf"><a class="btn fleft fright next">通販連結</a></div>
+			</div>
+		</section>
+		<section id="endBook-1" class="badEnd">
+			<div class="w800 txt-center">
+				<p>老樣子沒有本子，今天是愚人節，祝您玩這個遊戲玩得愉快:D</p>
+				<h2>BAD END - 愚人節快樂</h2>
+				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
+			</div>
+		</section>
+	</div>
+</body>
+
+<script>
+	var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	var videoId = ['FMtF8iB55_s', 'rZgHmWb1yZg', 'AWElhi4XbCk', 'iaU1b_jvWws', 'uS3LE8IZpPM', 'j9k3liT2MLo', 'rEmbtS10Yx4', 'iKhYelQPcts', '6RnC7eWZutE'];
+	var player,
+		currentVideoId = 0,
+		stopPlayAt = 32, // Stop play at time in seconds
+    	stopPlayTimer,   // Reference to settimeout call
+    	playFlag = false;
+	function onYouTubeIframeAPIReady() {
+	    player = new YT.Player('player', {
+			playerVars: {
+			   autoplay: 0,
+	           // loop: 1,
+	           rel: 0,
+	           showinfo: 0,
+	           autohide: 0,
+	           modestbranding: 1
+	        },
+	        events: {
+	            'onReady': onPlayerReady,
+	            'onStateChange': onPlayerStateChange
+	        }
+	    });
+	}
+	function onPlayerReady(event) {
+		if(playFlag){
+	   		event.target.loadVideoById(videoId[currentVideoId]);
+		}
+	}
+
+	function onPlayerStateChange(event) {
+		var time, rate, remainingTime;
+		clearTimeout(stopPlayTimer);
+		if (event.data == YT.PlayerState.PLAYING) {
+			time = player.getCurrentTime();
+			// Add .4 of a second to the time in case it's close to the current time
+			// (The API kept returning ~9.7 when hitting play after stopping at 10s)
+			if(currentVideoId == 0){
+				stopPlayAt=32;
+			}
+			else{
+				stopPlayAt=10;
+			}
+			if (time + .4 < stopPlayAt) {
+				rate = player.getPlaybackRate();
+				remainingTime = (stopPlayAt - time) / rate;
+				stopPlayTimer = setTimeout(pauseVideo, remainingTime * 1000);
+			}
+	    }
+		if (event.data == YT.PlayerState.ENDED) {
+			playNext();
+		}
+	}
+	function pauseVideo() {
+		if(currentVideoId == 8){return;}
+		player.pauseVideo();
+		playNext();
+	}
+	function playNext() {
+		currentVideoId++;
+		if (currentVideoId < videoId.length) {
+			player.loadVideoById(videoId[currentVideoId]);
+		} else {
+			currentVideoId = 0;
+			player.loadVideoById(videoId[currentVideoId]);
+		}
+	}
+	function playPrev() {
+		currentVideoId--;
+		if (currentVideoId >= 0) {
+			player.loadVideoById(videoId[currentVideoId]);
+		} else {
+			currentVideoId = 8;
+			player.loadVideoById(videoId[currentVideoId]);
+		}
+	}
+	function startTv(){
+		playFlag = true;
+		player.loadVideoById(videoId[currentVideoId]);
+		setTimeout(function(){
+			$('#fakeA').addClass('active');
+			$('#goTv').addClass('active');
+		},10000)
+	}
+	function endTv(){
+		playFlag = false;
+		player.pauseVideo();
+	}
+</script>
+<script src="lib/jquery-3.3.1.min.js"></script>
+<script src="lib/scrollreveal.min.js"></script>
+<script src="lib/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	$(function(){
+		$('.scrollBox').not('.no-scroll').mCustomScrollbar({
+			axis:"y",
+			mouseWheel:{ scrollAmount: 32 }
+		});
+		// $('#loader').delay(3000).fadeOut(800);
+		setTimeout(function(){
+			$('#startButton').addClass('active');
+		}, 7000);
+		$('.next').on('click', function(){
+			$(this).parents('section').removeClass('active')
+				   .next().addClass('active');
+		})
+		$('.selectBox a, .goTo').on('click', function(){
+			var target = $(this).data('target');
+			$(target).addClass('active')
+					 .siblings().removeClass('active');
+		})
+		$('.restart').on('click', function(){
+			$('#secStart').addClass('active')
+					 .siblings().removeClass('active');
+		})
+		$('#fakeA').on('click', function(){
+			$(this).fadeOut();
+		})
+	})
+</script>
+</html>
