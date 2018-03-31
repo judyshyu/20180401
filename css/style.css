@@ -797,8 +797,10 @@
 	@media screen and (max-width: 768px){
 		p{letter-spacing: 0;}
 		.btn{
-			width: 200px;
+			width: 130px;
+			min-width: 0;
 			padding:5px 20px;
+			margin:10px 5px;
 		}
 		.selectBox a{padding:5px 5px 5px 35px;}
 		.selectBox a:before{top: 16px; }
