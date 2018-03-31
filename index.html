@@ -52,6 +52,7 @@
 				<div class="btnBox">
 					<a class="btn fleft fright next" id="startButton">開始</a>
 				</div>
+				<p align="center"><span class="ib-middle">造訪次數：</span><a href="http://www.amazingcounters.com" target="_blank" class="ib-middle"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221512&c=9664849" alt="AmazingCounters.com"></a></p>
 			</div>
 		</section>
 		<section>
@@ -615,17 +616,23 @@
 						<li><p>三、<b>找個信任的人陪伴你。</b>不管當時多晚，都不要自己一個人。找親人、朋友或老師陪伴，或找社福機構、學校等相關單位求助，或撥「婦幼保護專線113」與性侵害防治中心聯繫。</p><br></li>
 						<li><p>四、<b>不要洗澡，也別換衣服，盡快就醫。</b>萬一不幸遭遇性侵害，就應立刻尋找合格醫師檢查，以進行必要的蒐證、治療或避孕措施。為了保存相關證據，請你先忍耐，不要洗澡更衣，許多醫院都有全天24小時的急診，可以立刻就醫。</p><br></li>
 						<li><p>五、<b>如果是陌生強暴，請牢記歹徒各項特徵。</b>並且保留現場不要移動或觸摸任何現場器物。</p><br></li>
-						<li><p>六、<b>儘快向警方或相關單位報案。</b>很多人往往會擔心二度傷害而躊躇不前，甚至不去報案。然而，報案不但可以減少其他婦女受害的機會，也是保障自己免於被加害人再度傷害的方法。長久以來，警檢單位及法院審理性侵害案件的輕忽態度一直受到強烈的批評，但在「性侵害犯罪防治法」等相關法律及施行細則、處理準則頒佈後，受害人可以要求相關單位照章辦理，以降低二度傷害的機會。<br>
-						<br>
-						驗傷以及體液蒐證，保存一切相關證據，數日後立刻將茨木移送法辦。</p></li>
+						<li><p>六、<b>儘快向警方或相關單位報案。</b>很多人往往會擔心二度傷害而躊躇不前，甚至不去報案。然而，報案不但可以減少其他婦女受害的機會，也是保障自己免於被加害人再度傷害的方法。長久以來，警檢單位及法院審理性侵害案件的輕忽態度一直受到強烈的批評，但在「性侵害犯罪防治法」等相關法律及施行細則、處理準則頒佈後，受害人可以要求相關單位照章辦理，以降低二度傷害的機會。</p></li>
 					</ul>
 				</div>
 				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
 			</div>
 		</section>
-		<section id="endC-1" class="badEnd">
+		<section id="endC-1">
 			<div class="w800">
-				<h2>BAD END - 好好學習，天天向上</h2>
+				<div class="scrollBox">
+					<p>驗傷以及體液蒐證，保存一切相關證據，數日後立刻將茨木移送法辦。</p>
+				</div>
+				<div class="btnBox cf"><a class="btn fright next">下一步</a></div>
+			</div>
+		</section>
+		<section id="endC-2" class="badEnd">
+			<div class="w800">
+				<h2>BAD END - 移送法辦</h2>
 				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
 			</div>
 		</section>
@@ -702,6 +709,7 @@
 		<section id="endF-2" class="badEnd">
 			<div class="w800">
 				<h2>BAD END - 停職懲處</h2>
+				<small class="txt-center">大P推薦之真結局(･∀･)<br><br></small>
 				<div class="btnBox"><a class="btn fright fleft restart">重新開始？</a></div>
 			</div>
 		</section>
@@ -905,7 +913,22 @@
 <script src="lib/jquery.mCustomScrollbar.min.js"></script>
 <script src="js/main.js"></script>
 <script>
+	/*
+	* Shuffle jQuery array of elements - see Fisher-Yates algorithm
+	*/
+	jQuery.fn.shuffle = function () {
+	    var j;
+	    for (var i = 0; i < this.length; i++) {
+	        j = Math.floor(Math.random() * this.length);
+	        $(this[i]).before($(this[j]));
+	    }
+	    return this;
+	};
 	$(function(){
+		$('.selectBox').each(function(){
+			$(this).find('li').shuffle();
+		})
+
 		$('.scrollBox').not('.no-scroll').mCustomScrollbar({
 			axis:"y",
 			mouseWheel:{ scrollAmount: 32 }
